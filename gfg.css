@@ -1,0 +1,639 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box; 
+}
+:root{
+    --grey:  #202020;
+    --white: #ececec;
+   }
+
+body{
+    background: rgb(0, 0, 0);
+    height: fit-content;
+}
+
+.logo{
+    font-size: 16px;
+}
+.nav-up{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height:50px;
+background-color:#171b1d;
+border-bottom: 1px solid var(--grey);
+position: relative;
+z-index: 60;
+}
+.nav-cont1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+    height: 100%;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--white); 
+    margin-left: 20px;   
+}
+
+li{
+    list-style: none;
+}
+
+.fa-magnifying-glass{
+    font-size: 1.5  rem;
+}
+#btn{
+    height: 33px;
+    width: 100px;
+    border: none;
+    border-radius: 0.5rem;
+    background: #273239;
+    font-size: 1rem;
+    color: var(--white);
+}
+#btn:hover{
+    cursor: pointer;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid  var(--grey) ;
+    border-radius:20px;
+    background: var(--grey);
+    height: 35px;
+    width: 35px;
+}
+.circle:hover{
+    cursor: pointer;
+}
+.nav-cont2{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    color: var(--white);
+}
+.nav-cont3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+li:hover{
+    color: #30883d;
+    cursor: pointer;
+}
+@keyframes rotateUp {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.fa-chevron-up {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    transform: rotate(180deg);
+    transition: transform 0.3s ease; /* Add a transition for smooth animation */
+}
+
+li:hover .fa-chevron-up {
+    animation: rotateUp 0.3s forwards; /* Apply the rotation animation on hover */
+    cursor: pointer;
+}
+
+.list{
+    color: white;
+    margin-right: 0.8%;
+}
+.spanlist:hover{
+    color: #30883d;
+    
+}
+.nav-down{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    height: 45px;
+    width: 100%;  
+    background:#171b1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-down-cont1 {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    white-space: nowrap;
+    width: 95%; /* Set the width according to your design */
+    font-size: 1rem;
+    /* background-color: #21898c; */
+    overflow: auto;
+}
+
+.scroll{
+    height: 45px;
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll::-webkit-scrollbar{
+    width: 0em;
+
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+.nav-down-cont1::-webkit-scrollbar{
+    width: 0em;
+
+}
+.nav-down-cont1::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
+#arrow {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+}
+.prev{
+    position: absolute;
+    left: 5px;
+    margin-right: 10px;
+    background: transparent;
+    color: #38ac80;
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     padding-bottom: 12px;
+}
+.next{
+    position: absolute;
+    right: 5px;
+    margin-left: 10px;
+    background: transparent;
+    color: #38ac80;
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+.moveBtn:hover{
+    cursor: pointer;
+}
+
+
+/* <!-- content of the body --> */
+/* <!-- 1st Content heading & searchBar--> */
+
+
+
+.bg{
+    /* height: 3500px; */
+    width: 100%;
+    background: linear-gradient(180deg, rgb(58, 178, 132, 1), rgba(0,0,0,0));
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.bgCont1{
+    width: 80%;
+    height: 3%;
+    /* background: #b65f5f; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: auto;
+    margin-top: 3%;
+}
+.header{
+    color: white;
+    font-size: 1.5rem;
+}
+.sub{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    color: white;
+}
+.bgsearch{
+    width: 50%;
+}
+.form1{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+}
+.form1:hover{
+    border: 1px solid white;
+    border-radius:5px ;
+}
+
+.inputsearch{
+   height: 40px;
+   width: 90%;
+   border: none;
+   background-color: var(--grey);
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   padding-left: 15px;
+   color: whitesmoke;
+   font-size: 1rem;
+   outline: none;
+}
+
+.subBtn{
+    width: 10%;
+    height: 40px;
+    background: #046435;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+}
+
+/* <!-- 1st Content Ends here--> */
+
+/* <!-- 2nd Content Bg & Card Starts here--> */
+
+.bg2{
+    margin-top: 5%;
+    height: 88%;
+    width: 90%;
+    background: #171b1d;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    flex-direction: column;
+}
+
+.bg2-Div1{
+    width: 93%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div1Crd1, .div1Crd2{
+    margin-top: 4%;
+    margin-bottom: 2%;
+    height: 200px;
+    width: 48%;
+    background-color: #497cce;
+    background-image: url(https://media.geeksforgeeks.org/img-practice/3_steps_Gif_2-1704708759.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    border: 2px solid white;
+    border-radius: 10px;
+    
+}
+.div1Crd2{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/1/Web/Other/3450_1704708664.png);
+    /* background-size: cover; */
+    background-position: 0 50%;
+}
+
+/* heading Popular */
+.popular{
+    margin-top: 2%;
+    height: 4%;
+    width: 93%;
+    color: white;
+    font-size: 12px;
+    /* background-color: #f6b91c; */
+}
+
+
+/* heading Popular  End*/
+
+.cards-Div2{
+    width: 95%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.div2Crd{
+    height: 480px;
+    width: 280px;
+    background: rgb(32, 36, 38);
+    border: 1px solid white;
+    border-radius: 15px ;
+    margin-bottom: 3%;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.div2Crd:hover{
+    cursor: pointer;
+    transform: scale(1.04) ;
+}
+.div2Crd:active{
+    transform: scale(0.95);
+}
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/1699342871/Web/Content/dsa-to-development-coding-guide-thumbnail.webp);
+    background-size: cover;
+    background-position: 40%;
+    height: 30%;
+    width: 100%;
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+}
+.img2{
+background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/241/Web/Content/FSRNL_1704355802.webp);
+}
+.img3{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/543/Web/Content/GATE%20Data%20Science%20-%20Artificial%20Intelligence-65_1704355110.webp);   
+}
+.img4{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/405/Web/Content/ML%20&%20DS_1704355648.webp); 
+}
+.img5{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/458/Web/Content/101%20Interview_1704013108.webp) ;
+}
+.img6{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/517/Web/Content/Software%20Testing_1703738933.webp) ;
+}
+.img7{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/227/Web/Content/Java%20Backend-69_1704356005.webp) ;
+}
+.img8{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/244/Web/Content/CIP_1703848104.webp);
+}
+.img9{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/261/Web/Content/DSA%20Python_1703678970.webp);
+}
+.img10{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/198/Web/Content/DSA_1704187740.webp) ;
+}
+.img11{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/570/Web/Content/Cloud%20Practitioner%20aws-64_1704356096.webp);
+}
+.img12{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/432/Web/Content/Product%20Test%20Series_1704356489.webp);
+}
+.img13{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/270/Web/Content/Java%20Programming_1704021664.webp) ;
+}
+.img14{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/221/Web/Content/CPP%20Prog_1704186113.webp);
+}
+.img15{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/345/Web/Content/JS_1704356895.webp) ;
+}
+.img16{
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/287/Web/Content/C%20Prog_1704185947.webp) ;
+}
+
+.div2-content{
+    height: 67%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.div2-subcontent{
+    margin-top: 1%;
+    height: 15%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.growthImg{
+    height: 100%;
+    width:  12%;
+    border-radius: 100%;
+    background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/1/Web/Content/visit_count_2_1687863297.png);
+}
+.reach{
+    color: #818384;
+    font-size: 0.65rem;
+    font-weight: 600;
+}
+.rating{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid white;
+    height: 25px;
+    width: 55px;
+    border-radius: 5px;
+
+}
+.fa-star{
+    color: #f6b91c;
+    font-size: 0.8rem;
+}
+.div2-subcontent2{
+    margin-top: 5%;
+    height: 40%;
+    width: 90%;
+}
+
+.subhead{
+color: white;
+font-size: 1rem;
+}
+
+.level{
+    display: flex;
+    height: 40%;
+    width: 100%;
+    /* background: #000; */
+    align-items: center;
+}
+
+.level-circle{
+    height: 28px;
+    width: 28px;
+    background-color: #3f4142;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subhead2{
+color: #878a8c;
+margin-left: 5%;
+font-size: 0.8rem;
+}
+.fa-chart-simple{
+  font-size: 14px;
+  color: grey;
+}
+
+.pricing{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 650;
+    color: white;
+    width: 100%;
+    height: 30%;
+    background-color: #252b2e;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    gap: 2%;
+}
+.discount{
+    color: #878a8c;
+}
+/* .explore{
+    height: 40%;
+    width: 30%;
+    border: 1.5px solid green;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.exploreBtn{
+    height: 30px;
+    width: 80px;
+    background: transparent;
+    border: 1.5px solid green;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-weight: 650;
+}
+.exploreBtn:hover{
+    cursor: pointer;
+}
+
+.div3-container{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.div3-cont1{
+    height: 100%;
+    width: 95%;
+    border: 1.5px solid #338969;
+    border-radius: 10px;
+    display: flex;
+    color: #878a8c;
+    justify-content: center;
+    padding: 10px;
+    font-size: 0.8rem;
+
+}
+
+.fa-circle-exclamation{
+ color: green;
+ margin-right: 10px;
+}
+
+.courseBox{
+ width: 96%;
+ /* background-color: #046435; */
+ display: flex;
+ justify-content: center;
+ gap:3%;
+ flex-wrap: wrap;
+ align-items: center;
+ margin-bottom: 2%;
+}
+
+.fa-database{
+    font-size: 15px;
+}
+
+.box-content{
+width: 250px;
+height: 60px;
+background-color: #f39893;
+border-radius: 5px;
+color: white;
+font-size: 0.5rem;
+display: flex;
+justify-content: center;
+border: none;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.box-content:hover{
+    cursor: pointer;
+}
+
+.box2{
+    background: #3079ac;
+}
+.box3{
+    background: #abd194;
+}
+.box4{
+    background: #7c87a5;
+}
+.box5{
+    background: #627a92;
+}
+.box6{
+    background: #21898c;
+}
+.box7{
+    background: #b88cbf;
+}
+.box8{
+    background: #f5a572;
+}
+.div-heading{
+    margin-left: 6%;
+    width: 75%;
+    height: 95%;
+    text-align: left;
+    /* background: #000; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* <--------Footer--------> */
+
+.footerBody{
+margin-top: 3%;
+height: 5%;
+width: 100%;
+background: #000000;
+border-top: 2px solid var(--grey);
+}

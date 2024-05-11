@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    width: 35%;
+    height: 473px;
+    border: 2px solid black;
+    background: black;
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.slide{
+    position: absolute;
+    width: 100%;
+   transition: 1s ease-in-out;
+   border-radius: 25%;
+}
+.cont2{
+width: 50%;
+margin: auto;
+display:flex ;
+justify-content:space-between ;
+margin-top: 10px;
+}
+
+.btn{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(7, 63, 0);
+    color: white;
+    font-size: 18px;
+}
+.btn:active{
+background-color: rgb(3, 24, 0);   
+}

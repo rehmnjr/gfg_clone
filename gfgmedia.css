@@ -1,0 +1,55 @@
+@media screen and (max-width:1270px) {
+    .bgCont1{
+        flex-direction: column;
+    }
+    .form1{
+        width: 95%;
+    }
+    .bgsearch{
+        width: 70%;
+    }
+    .bg2-Div1{
+      flex-direction: column;
+    }
+    .nav-cont1{
+        display: none;
+    }
+    .nav-up{
+        justify-content: end;
+    }
+    .nav-cont2{
+        width: 55%;
+    }
+  
+}
+
+
+@media screen and (max-width:655px){
+   
+   .cards-Div2{
+        width: 80%;
+    }
+    .div2Crd{
+        margin-top: 2%;
+        height: 420px;
+        width: 280px; 
+    }
+    .box-content{
+        width: 180px; 
+    }
+}
+
+@media screen and (max-width:375px){
+    .bg2{
+    height: 85%;
+    width: 300px;
+    }
+    .bg{
+        width: 375px;
+        }
+}
+@media screen and (max-width:800px) {
+    .nav-cont3{
+        width: 60%;
+    }
+}
